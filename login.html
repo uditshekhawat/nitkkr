@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+         /*Login box*/
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: url("skybg4.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+ 
+}
+
+.container{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.container .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.container form{
+  padding: 10px 30px 50px 30px;
+}
+.container form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.container form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  
+}
+.btn {
+        font-family: 'Poppins', sans-serif;
+        margin: 10px 20px;
+        margin-left:27%;
+        margin-top: 20px;
+        padding: 10px 30px;
+        border: 2px solid grey;
+        border-radius: 15px;
+        font-size: 20px;
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+        cursor: pointer;
+        color: #fff;
+        font-size: 25px;
+        font: 600;
+  text-align: center; 
+    }
+    .formerror{
+        color:black Bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+    }
+    .note{
+     text-align: center;
+     font-size: 16px;
+     color: gray;
+     
+    }
+    
+    
+    </style>
+   
+      <div class="container">
+  <span class="flasherror"></span>
+    <div class="title">
+       User Login
+    </div>
+    <form  name="myForm" action="Newdashboard.html" onsubmit="return validated()">
+       <div class="field" >
+            <input type="text"name="fname" placeholder="Enter your ID" id="log" required>
+       </div>
+       <div class="field" >
+        <input type="password" name="fpass" placeholder="Enter your Password " id="password" required>
+       </div>
+       <br>
+       <div class="note">
+        Note: Use admin as Id and Password
+      </div>
+      <br>
+       <div>
+         <button class="btn"  value="submit" >Submit</button>
+       </div>
+    </form>
+    <span id="Show"> </span>
+</body>
+
+<script>
+
+function validated()
+{
+    var user=document.getElementById('log').value;
+    var pass=document.getElementById('password').value;
+    if(user=="admin"&&pass=="admin")
+    {
+        
+        window.alert("Logging in");
+        return true;
+
+    }
+    else
+    {
+        
+        window.alert("Username or Password Incorrect");
+        return false;
+    }
+  
+}
+       
+
+  </script>
+</html>
