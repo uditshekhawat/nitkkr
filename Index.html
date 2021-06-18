@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT-KURUKSHETRA</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /*Background image*/
+
+
+    /*Header styling*/
+    #titlebar {
+        background-color: rgb(209, 255, 255);
+    }
+
+    .Header {
+        position: relative;
+        align-self: center;
+        text-align: center;
+        font-family: Serif;
+        font-size: 58px;
+    }
+
+    .logo img {
+        float: left;
+        width: 120px;
+        height: 140px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    /*Navbar-->*/
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+
+    .fixed li a {
+        text-decoration: none;
+        padding: 34px 40px;
+        font-size: 20px;
+    }
+
+    .fixed li a:hover {
+        color: wheat;
+    }
+
+
+    h1 {
+        font-family: fantasy;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .element {
+        position: relative;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    img {
+        width: 800px;
+        height: 1000px;
+
+    }
+
+    #new {
+        align-self: center;
+        background-color: indianred;
+        border: 1px solid black;
+        border-radius: 45px;
+        margin-left: 40%;
+    }
+
+    #new:hover {
+        background-color: salmon;
+    }
+
+    p {
+        font-size: 6ch;
+        font-family: fantasy;
+        font-weight: 300;
+        align-self: center;
+        margin: 20px
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .wrapper {
+        background: #171c24;
+        position: relative;
+        width: 100%;
+    }
+
+    .wrapper nav {
+        position: relative;
+        display: flex;
+        max-width: calc(100% - 200px);
+        margin: 0 auto;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .content {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .content .links {
+        margin-left: 0px;
+        display: flex;
+    }
+
+    .content .logo a {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .content .links li {
+
+        list-style: none;
+        line-height: 70px;
+    }
+
+    .content .links li a,
+    .content .links li label {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 9px 17px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+
+    }
+
+    .content .links li label {
+        display: none;
+    }
+
+    .content .links li a:hover,
+    .content .links li label:hover {
+        background: #323c4e;
+
+
+    }
+
+    .wrapper input[type="checkbox"] {
+        display: none;
+    }
+
+
+    /* Dropdown Menu code start */
+    .content .links ul {
+        position: absolute;
+        background: #171c24;
+        top: 80px;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .content .links li:hover>ul {
+        top: 70px;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease;
+
+    }
+
+    .content .links ul li a {
+        display: block;
+        width: 100%;
+        line-height: 30px;
+        border-radius: 0px !important;
+
+    }
+
+    .content .links ul li {
+        position: relative;
+    }
+
+    .content .links ul li:hover ul {
+        top: 0;
+    }
+
+    .page-width h2 {
+        align-self: center;
+
+    }
+
+
+    /*corousel code-->*/
+    .slideshow {
+        z-index: 10;
+        position: relative;
+
+        margin-right: 0px;
+        display: flex;
+    }
+
+    .main-body img {
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    #leftbtn {
+        position: absolute;
+        margin-top: 220px;
+    }
+
+    #rightbtn {
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 97%;
+    }
+
+    #left {
+        padding: 10px;
+        background-color: transparent;
+        font-size: 30px;
+        border-style: none;
+        color: white;
+        box-shadow: 2px grey;
+    }
+
+    #left:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    #right {
+        padding: 10px;
+        background-color: transparent;
+        font-size: 30px;
+        border-style: none;
+        color: white;
+        box-shadow: 2px grey;
+    }
+
+    #right:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    .slideshow img {
+        width: 100%;
+        height: 425px;
+        border: 5px solid #FFFFFF;
+        border-radius: 10px;
+
+    }
+
+    /*Explore sextion*/
+    .Explore-heading {
+        margin-top: 5px;
+    }
+
+    .Explore h1 {
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .Explore {
+        background-color: whitesmoke;
+        box-sizing: border-box;
+    }
+
+    .container1 {
+        background-color: whitesmoke;
+    }
+
+
+    /*Notification box-->*/
+    .Notification {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 70%;
+    }
+
+    /*Courses*/
+    .container1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+    }
+
+    .BTECH {
+        position: relative;
+        width: 400px;
+    }
+
+    .BTECH img {
+        width: 400px;
+        height: 300px;
+        box-shadow: 10px 10px 5px grey;
+        border-radius: 10px;
+    }
+
+    .BTECH-img {
+        display: flex;
+        width: 100%;
+    }
+
+    .imageoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imageoverlay--blur {
+        backdrop-filter: blur(5px);
+    }
+
+
+    .imageoverlay>* {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .imageoverlay:hover {
+        opacity: 1;
+        cursor: zoom-in;
+    }
+
+
+    .imagetitle {
+        font-size: 2em;
+    }
+
+    .imagedescription {
+        font-size: 1em;
+        margin-top: 0.25em;
+    }
+
+    .imp-news {
+        position: relative;
+        top: 0px;
+        background-color: rgb(30, 98, 119);
+        color: white;
+        padding: 0.2vw;
+        font-size: 1.5vw;
+    }
+
+    .imp-news a {
+        color: white;
+    }
+
+    .imp-news a:hover {
+        text-decoration: underline;
+    }
+
+    /*Know more box*/
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 5px 9px;
+        background-color: rgb(13, 137, 168);
+        color: white;
+        padding: 5px 14px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 37%;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .knowmore {
+        border: 2px solid white;
+        margin: 50px auto 0px auto;
+        padding: 25px;
+        width: 40%;
+        border-radius: 28px;
+        background: #ffffff;
+        font-family: 'Baloo Bhai', cursive;
+        font-size: 20px;
+
+    }
+
+    .knowmore img {
+        margin-left: 10%;
+        width: 80%;
+        height: 300px;
+    }
+
+    .formdesign input {
+        font-family: 'Baloo Bhai';
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+
+    .knowmore h1 {
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        font-family: 'Baloo Bhai', cursive;
+
+    }
+
+    .knowmore h2 {
+        text-align: center;
+    }
+
+    .knowmore:hover {
+        box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+        filter: invert(5%);
+    }
+
+    .knowmore button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+
+    .bg {
+        margin-top: 40px;
+        background: url('skybg2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    /*Dashboard*/
+    .dashboard {
+        background: #ebebf2;
+        border-top: .3125em solid #351c75;
+
+    }
+
+    .dashboard h1 {
+        margin-top: 20px;
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+    }
+
+    #demo {
+
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .last {
+        background: #ebebf2;
+        border-top: .3125em solid #351c75;
+
+    }
+
+    .last h1 {
+        margin-top: 20px;
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+    }
+.text2{
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    font-family: fantasy;
+    
+
+}
+.text2 h1{
+    color: white;
+    font-weight: normal;
+   
+    
+}
+
+    .imagemap img {
+        width: 1350px;
+        height: 500px;
+
+    }
+
+    /*Footer section*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        font-family: 'Poppins', sans-serif;
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .footer {
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+
+
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+    }
+     .footer-col .social-links img{
+        width: 60px;
+        height: 50px;
+        border-radius: 50%;
+        
+    }
+
+       .footer-col .social-links  {
+        display: inline-block;
+        
+        height: 50px;
+        width: 60px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+        border: #24262b 2px;
+    }
+
+    .footer-col .social-links img:hover {
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    .copyright{
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 0px;
+
+    }
+    
+</style>
+
+<body>
+    <div id="titlebar">
+        <div class="Top1">
+            <div class="logo">
+                <img alt="Logo" border="0" src="logoup.png" />
+            </div>
+            <h1 class="Header"> National Institute of Technology- Kurukshetra </h1>
+            <h2 class="Header"> Institute of National Importance </h2>
+            <br>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <nav>
+            <div class="content">
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">Institute</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Institute</label>
+                        <ul>
+                            <li><a href="#">Institute Profile</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Honours and Rewards</a></li>
+                            <li><a href="#">Service rule</a></li>
+                            <li><a href="#">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Academics</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Academics</label>
+                        <ul>
+                            <li><a href="#">Programmes</a></li>
+                            <li><a href="#">Exam and Evaluation</a></li>
+                            <li><a href="#">Roll sheet</a></li>
+                            <li><a href="#">Fees and Expense</a></li>
+                            <li><a href="#">Admission</a></li>
+                            <li><a href="#">Research and Development</a></li>
+                            <li><a href="#">Time Table</a></li>
+                            <li><a href="#">Results</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Adminstration</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Adminstration</label>
+                        <ul>
+                            <li><a href="#">Board of Director</a></li>
+                            <li><a href="#">Chaiperson</a></li>
+                            <li><a href="#">Director</a></li>
+                            <li><a href="#">Registrar</a></li>
+                            <li><a href="#">Financial Comtt.</a></li>
+                            <li><a href="#">Senate</a></li>
+                            <li><a href="#">Deans</a></li>
+                            <li><a href="#">Other officers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Departments</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Departments</label>
+                        <ul>
+                            <li><a href="#">Computer Engg.</a></li>
+                            <li><a href="#">Civil Engg.</a></li>
+                            <li><a href="#">Mechanical Engg.</a></li>
+                            <li><a href="#">Electrical Engg.</a></li>
+                            <li><a href="#">Electronic&Communication Engg,</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Activities</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Activities</label>
+                        <ul>
+                            <li><a href="#">Techspardha</a></li>
+                            <li><a href="#">Cultural Clubs</a></li>
+                            <li><a href="#">Confluence</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Student</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Sections</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Sections</label>
+                        <ul>
+                            <li><a href="#">Account Section</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Estate Section</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">More</a>
+                                <input type="checkbox" id="show-items">
+                                <label for="show-items">More</label>
+                                <ul>
+                                    <li><a href="#">Estate</a></li>
+                                    <li><a href="#">Library</a></li>
+                                    <li><a href="#">Health</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Admissions</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Admissions</label>
+                        <ul>
+                            <li><a href="#">B.Tech</a></li>
+                            <li><a href="#">M.Tech</a></li>
+                            <li><a href="#">PhD.</a></li>
+                            <li><a href="#">MBA</a></li>
+                            <li><a href="#">MCA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="slideshow">
+            <img src="MAIN.jpg" id="slideshowimg" width="700px" height="350px">
+            <div id="leftbtn">
+                <button id="left">&lt</button>
+            </div>
+            <div id="rightbtn">
+                <button id="right">&gt</button>
+            </div>
+        </div>
+    </div>
+    <div class="Explore">
+        <br>
+        <br>
+        <div class="Explore-heading">
+            <h1>Explore Our Programmes</h1>
+        </div>
+        <div class="container1">
+
+            <div class="BTECH">
+                <img class="BTECH-img" src="first11.jpg" alt="image">
+                <div class="imageoverlay">
+                    <div class="imagetitle">BTECH</div>
+                    <p class="imagedescription">
+                        Admissions through JEE-2021
+                    </p>
+                </div>
+            </div>
+            <div class="BTECH">
+                <img class="BTECH-img" src="first12.jpg" alt="image">
+                <div class="imageoverlay">
+                    <div class="imagetitle">MTECH</div>
+                    <p class="imagedescription">
+                        Admissions through CCMT-2021
+                    </p>
+                </div>
+            </div>
+            <div class="BTECH">
+                <img class="BTECH-img" src="first13.jpg" alt="image">
+                <div class="imageoverlay">
+                    <div class="imagetitle">PHD</div>
+                    <p class="imagedescription">
+                        Applications on prescribed proforma
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg">
+            <br>
+            <div class="knowmore">
+                <h2>Please Fill the Following Details</h2>
+                <br>
+                <form name="myForm" onsubmit="return validateForm()" method="GET" class="new">
+
+                    <img src="form.JPG" alt="">
+                    <div class="formdesign" id="name">
+                        Name: <input type="text" name="fname" placeholder="Enter your Name" required><b><span
+                                class="formerror"> </span></b>
+                    </div>
+
+
+                    <div class="formdesign" id="email">
+                        Email: <input type="email" name="femail" required placeholder="xyz@mail.com"><b><span
+                                class="formerror"> </span></b>
+                    </div>
+
+                    <div class="formdesign" id="phone">
+                        Phone: <input type="phone" name="fphone" required
+                            placeholder="Enter 10 Digit Mobile Number"><b><span class="formerror"></span></b>
+                    </div>
+
+                    Course of interest: <br>
+                    <input type="radio" name="Course"> B.Tech<br>
+                    <input type="radio" name="Course"> M.Tech<br>
+                    <input type="radio" name="Course"> PhD<br>
+
+                    <input class="btn" type="submit" value="Submit">
+
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+    <div class="dashboard">
+        <h1>Dashboard</h1>
+        <a name="dashboard"></a>
+        <div>
+            <p id="demo"></p>
+        </div>
+        <div class="Login">
+            <iframe src="login.html" title="LOGIN" width="100%" height="900"></iframe>
+        </div>
+
+    </div>
+    <div class='last'>
+        <h1>Campus Tour</h1>
+        <br>
+        <div class="text2"> <h1> Click on any part to take a virtual tour</h1> </div>
+        <div class="imagemap">
+            <img src="MAINR.jpg" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="_top" alt="Main-Building" title="Main-Building" href="Mapping2.jpeg"
+                    coords="244,173,791,369" shape="rect">
+                <area target="_top" alt="Hostel" title="Hostel" href="Mapping3.jpg" coords="925,69,1099,122"
+                    shape="rect">
+                <area target="_top" alt="Library" title="Library" href="Mapping1.jpg" coords="1104,180,1365,284"
+                    shape="rect">
+                <area target="_top" alt="Fountain" title="Fountain" href="Mapping4.jpg" coords="790,173,935,380"
+                    shape="rect">
+                <area target="_top" alt="Park" title="Park" href="Park.jpg"
+                    coords="4,344,197,328,383,402,457,500,99,499,27,500,-1,493,1,500" shape="poly">
+                <area target="_top" alt="Park" title="Park" href="Park.jpg"
+                    coords="1364,285,1106,284,711,500,1365,500,1364,434,948,492,1365,432,1365,405,1362,279,703,499"
+                    shape="poly">
+                <area target="_top" alt="Surrounding" title="Surrounding" href="Surrounding.jpg" coords="2,6,924,171"
+                    shape="rect">
+                <area target="_top" alt="Building" title="Building" href="Mapping5.jpg"
+                    coords="930,126,1099,115,1106,283,938,376,936,251,927,120" shape="poly">
+                <area target="_top" alt="Surrounding" title="Surrounding" href="Surrounding1.jpg"
+                    coords="924,6,1365,0,1365,184,1101,179,1100,69,925,69" shape="poly">
+                <area target="_top" alt="CE-DEPARTMENT" title="CE-DEPARTMENT" href="Mapping6.jpg" coords="4,173,244,337"
+                    shape="rect">
+                <area target="_top" alt="Entrance" title="Entrance" href="Mapping7.jpeg"
+                    coords="310,367,943,382,698,500,456,500" shape="poly">
+            </map>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+
+                    <ul>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=1">Archive</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=3">Resources</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=4">Downloads</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=5">Student Corner</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=6">Important Links</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=7">Vigilance Corner</a></li>
+                        <li><a href="https://nitkkr.ac.in/sub_courses.php?id=564">PRO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+
+                    <ul>
+                        <li><a
+                                href="https://www.google.com/calendar/embed?showTitle=0&showCalendars=0&height=600&wkst=1&bgcolor=%23FFFFFF&src=niteventcalendar%40gmail.com&color=%235229A3&ctz=Asia%2FCalcutta">Event
+                                Calendar</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=13">Techspardha</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=15">JOBS @ NIT KKR</a></li>
+                        <li><a href="http://nitcouncil.org.in/">Council of NITs</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=17">More @ NITKKR</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=19">NIRF</a></li>
+                        <li><a href="https://nitkkr.ac.in/courses.php?id=62">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="https://www.nitkkraa.org/">Alumni Association</a></li>
+                        <li><a href="https://nitkkr.ac.in/docs/About%20TEQIP-III.pdf">TEQIP III</a></li>
+                        <li><a href="https://nitkkr.ac.in/sub_courses.php?id=567">NBA ACCREDITATION STATUS</a></li>
+                        <li><a href="https://nitkkr.ac.in/sub_courses.php?id=571">IT Infrastructure Usage Policy</a>
+                        </li>
+                        <li><a href="http://www.nitkkraa.com" target="_blank">Alumni Login</a></li>
+                        <li><a href="https://nitkkr.ac.in/login.php">User Login </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/nit.kurukshetra.5"><img src="fblogo1.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCeNBt-YR8d6xpfGtna8-RSg"><img src="YTfinal1.png" alt=""></a>
+                        <a href="https://twitter.com/NITKURUKSHETRA"><img src="Twitter.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+       <div class="copyright"> <p>&copy; 2021 Udit Shekhawat</p></div>
+
+    </footer>
+
+
+
+
+
+    <script>
+        var slideshowCounter = 0;
+        var slides = ["Ne122.jpg", "New13.jpg", "Ne123.png", "Ne122.jpg", "MAIN.jpg", "New11.jpg"]
+        const slide = document.querySelector('#slideshowimg');
+        const leftbtn = document.querySelector('#left');
+        leftbtn.addEventListener('click', leftShift);
+        function leftShift() {
+            slideshowCounter = Math.abs(slideshowCounter - 1) % slides.length;
+            slide.src = slides[slideshowCounter];
+        }
+
+        const rightbtn = document.querySelector('#right');
+        rightbtn.addEventListener('click', rightShift);
+        function rightShift() {
+            slideshowCounter = (slideshowCounter + 1) % slides.length;
+            slide.src = slides[slideshowCounter];
+
+        }
+
+        setTimeout(slideshow, 3000);
+        function slideshow() {
+            slideshowCounter = (slideshowCounter + 1) % slides.length;
+            slide.src = slides[slideshowCounter];
+            setTimeout(slideshow, 5000);
+        }
+
+        function clearErrors() {
+
+            errors = document.getElementsByClassName('formerror');
+            for (let item of errors) {
+                item.innerHTML = "";
+            }
+
+
+        }
+        function seterror(id, error) {
+            //sets error inside tag of id 
+            element = document.getElementById(id);
+            element.getElementsByClassName('formerror')[0].innerHTML = error;
+
+        }
+
+        function validateForm() {
+            var returnval = true;
+            clearErrors();
+
+            //perform validation and if validation fails, set the value of returnval to false
+            var name = document.forms['myForm']["fname"].value;
+
+            if (name.length == 0) {
+                seterror("name", "*Length of name cannot be zero!");
+                returnval = false;
+            }
+
+            var email = document.forms['myForm']["femail"].value;
+            if (email.length > 15) {
+                seterror("email", "*Email length is too long");
+                returnval = false;
+            }
+
+            var phone = document.forms['myForm']["fphone"].value;
+            if (phone.length != 10) {
+                seterror("phone", "*Phone number should be of 10 digits!");
+                returnval = false;
+            }
+            if (returnval == true) {
+                var txt;
+                var person = document.forms['myForm']["fname"].value;
+                txt = "Welcome " + person +", you have been sucessfully registered!!";
+                document.getElementById("demo").innerHTML = txt;
+                window.location = "#dashboard";
+                return false;
+            }
+
+
+            return returnval;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
